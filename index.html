@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spydiks — игры для Android</title>
+<meta name="description" content="«Медовый улей» и «Медовый пасьянс» — уютные игры для Android в RuStore. Поддержка: spydizavr@yandex.com">
+<link rel="icon" href="img/honey-hive.png">
+<style>
+:root {
+  --bg: #fbf4e4;
+  --ink: #2b1d0e;
+  --muted: #6b5638;
+  --card: #fffaf0;
+  --line: #ecdcb8;
+  --honey: #e8a317;
+  --honey-hover: #f2b630;
+  --accent: #9a5a00;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1d150b;
+    --ink: #f6ead2;
+    --muted: #c8b48e;
+    --card: #2a1f11;
+    --line: #4a3820;
+    --accent: #f0b43a;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+main { max-width: 760px; margin: 0 auto; padding: 48px 20px 40px; }
+header { display: flex; align-items: center; gap: 14px; }
+.mark { width: 44px; height: 44px; flex: none; }
+h1 { font: 700 30px/1.15 Georgia, "Times New Roman", serif; margin: 0; }
+.lead { color: var(--muted); margin: 10px 0 34px; }
+.games { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+.game {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+.game img { width: 72px; height: 72px; border-radius: 16px; display: block; }
+.game h2 { font: 700 20px/1.25 Georgia, "Times New Roman", serif; margin: 0 0 4px; }
+.game p { margin: 0 0 14px; color: var(--muted); font-size: 15.5px; }
+.links { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.store {
+  display: inline-block;
+  background: var(--honey);
+  color: #2b1d0e;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px 14px;
+  border-radius: 999px;
+}
+.store:hover { background: var(--honey-hover); }
+.small { color: var(--muted); font-size: 14px; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+.contact { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--line); }
+.contact h2 { font: 700 18px/1.3 Georgia, "Times New Roman", serif; margin: 0 0 6px; }
+.contact p { margin: 0; }
+.contact a { color: var(--accent); }
+footer { margin-top: 36px; color: var(--muted); font-size: 13.5px; }
+footer a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg class="mark" viewBox="0 0 44 44" aria-hidden="true">
+      <path d="M22 3 39 12.5v19L22 41 5 31.5v-19Z" fill="#e8a317"/>
+      <path d="M22 11.5 30.5 16.3v9.4L22 30.5l-8.5-4.8v-9.4Z" fill="#fbf4e4" opacity=".55"/>
+    </svg>
+    <h1>Spydiks</h1>
+  </header>
+  <p class="lead">Небольшие уютные игры для Android. Играть можно без интернета и без регистрации.</p>
+
+  <section class="games" aria-label="Игры">
+    <article class="game">
+      <img src="img/honey-hive.png" alt="" width="72" height="72">
+      <div>
+        <h2>Медовый улей</h2>
+        <p>Соединяй три одинаковые плитки и удваивай их число.</p>
+        <div class="links">
+          <a class="store" href="https://www.rustore.ru/catalog/app/ru.spydizavr.honeyhive">Открыть в RuStore</a>
+          <a class="small" href="https://vk.com/app54796162">Играть во ВКонтакте</a>
+          <a class="small" href="https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2Fhttps%3A%2F%2Fdisk.yandex.ru%2Fd%2F30R1t8mpP6eCpw&amp;name=%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20-%20%D0%9C%D0%B5%D0%B4%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%83%D0%BB%D0%B5%D0%B9.docx">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="game">
+      <img src="img/honey-solitaire.png" alt="" width="72" height="72">
+      <div>
+        <h2>Медовый пасьянс</h2>
+        <p>Пасьянс «Три пика»: раскладывай карты и восстанавливай пасеку.</p>
+        <div class="links">
+          <a class="store" href="https://www.rustore.ru/catalog/app/ru.spydizavr.honeysolitaire">Открыть в RuStore</a>
+          <a class="small" href="https://docs.yandex.ru/docs/view?url=ya-disk-public%3A%2F%2Fhttps%3A%2F%2Fdisk.yandex.ru%2Fd%2Ft4LGTua3Llj3sg&amp;name=%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20-%20%D0%9C%D0%B5%D0%B4%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%BF%D0%B0%D1%81%D1%8C%D1%8F%D0%BD%D1%81.docx">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="contact">
+    <h2>Поддержка</h2>
+    <p>Вопросы, ошибки и идеи — на почту <a href="mailto:spydizavr@yandex.com">spydizavr@yandex.com</a>.</p>
+  </section>
+
+  <footer>
+    Для рекламных сетей: <a href="app-ads.txt">app-ads.txt</a>
+  </footer>
+</main>
+</body>
+</html>
